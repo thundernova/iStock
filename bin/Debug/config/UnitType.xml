@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ArrayOfUnitType>
+  <UnitType code="101" desc="元(类型1)" value="元:1,千元:1000,万元:1W,百万元:100W,亿元:1Y,十亿元:10Y"/>
+  <UnitType code="10102" desc="元(类型2)" value="万元:1W,千万元:1000W,万万元:1Y,百万万元:100Y,亿万元:1WY,十亿万元:10WY"/>
+  <UnitType code="10103" desc="元(类型3)" value="亿元:1Y,千亿元:1000Y,万亿元:1WY,百万亿元:100WY,亿亿元:1YY,十亿亿元:10YY"/>
+  <UnitType code="10104" desc="元(类型4)" value="元:1"/>
+  <UnitType code="10105" desc="元(类型5)" value="万元:1W"/>
+  <UnitType code="102" desc="股(类型1)" value="股:1,千股:1000,万股:1W,百万股:100W,亿股:1Y,十亿股:10Y"/>
+  <UnitType code="10202" desc="股(类型2)" value="股:1"/>
+  <UnitType code="103" desc="成交量(类型1)" value="张:1,手:10,万张:1W,万手:10W"/>
+  <UnitType code="10302" desc="成交量(类型2)" value="股:1,万股:1W,手:100,万手:100W"/>
+  <UnitType code="10303" desc="成交量(类型3)" value="股:1,万股:1W,手:1000,万手:1000W"/>
+  <UnitType code="104" desc="户(类型1)" value="户:1,千户:1000,万户:1W,百万户:100W,亿户:1Y,十亿户:10Y"/>
+  <UnitType code="10402" desc="户(类型2)" value="户:1"/>
+  <UnitType code="105" desc="成交笔数" value="笔:1,千笔:1000,万笔:1W,百万笔:100W,亿笔:1Y"/>
+  <UnitType code="106" desc="债券持有人数量" value="张:1,千张:1000,万张:1W,百万张:100W,亿张:1Y,十亿张:10Y"/>
+  <UnitType code="107" desc="份(类型1)" value="份:1,千份:1000,万份:1W,百万份:100W,十亿份:10Y"/>
+  <UnitType code="10702" desc="份(类型2)" value="份:1"/>
+  <UnitType code="10703" desc="份(类型3)" value="亿份:1"/>
+  <UnitType code="108" desc="百分比(类型1，不乘以100显示)" value="%:1"/>
+  <UnitType code="10802" desc="百分比(类型2，乘以100显示)" value="%:100"/>
+  <UnitType code="10803" desc="千分比(类型3，乘以1000显示)" value="‰:1000"/>
+  <UnitType code="109" desc="年" value="年:1"/>
+  <UnitType code="110" desc="月" value="月:1"/>
+  <UnitType code="111" desc="天" value="天:1"/>
+  <UnitType code="112" desc="次" value="次:1"/>
+  <UnitType code="113" desc="张" value="张:1"/>
+  <UnitType code="11302" desc="万张" value="万张:1"/>
+  <UnitType code="114" desc="亿" value="亿:1"/>
+  <UnitType code="115" desc="只" value="只:1"/>
+  <UnitType code="116" desc="岁" value="岁:1"/>
+</ArrayOfUnitType>

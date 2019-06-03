@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<log4net debug="false" configDebug="true" update="Merge">
+  <appender name="consoleAppender" type="log4net.Appender.ConsoleAppender">
+    <layout type="log4net.Layout.PatternLayout" value="%d{HH:mm:ss} %-5level %logger %thread %m%n" />
+  </appender>
+  <appender name="EmStartFileAppender" type="log4net.Appender.RollingFileAppender">
+    <file value="log\\" />
+    <encoding value="utf-8"/>
+    <maxSizeRollBackups value="2" />
+    <staticLogFileName value="false" />
+    <appendToFile value="true" />
+    <rollingStyle value="Date" />
+    <datePattern value="\S\t\a\r\t_yyyyMMdd.\t\x\t" />
+    <layout type="log4net.Layout.PatternLayout">
+      <header value="[客户端启动]&#xD;&#xA;" />
+      <footer value="" />
+      <conversionPattern value="%d{HH:mm:ss} %m%n" />
+    </layout>
+  </appender>
+  <root>
+    <level value="ALL" />
+    <appender-ref ref="consoleAppender" />
+    <appender-ref ref="RollingLogFileAppender" />
+  </root>
+  <logger name="log4" additivity="false">
+    <level value="ALL" />
+    <appender-ref ref="EmStartFileAppender" />
+  </logger>
+</log4net>

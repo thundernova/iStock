@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <script type="text/javascript" language="facecat">
+    </script>
+  </head>
+  <body>
+    <div type="splitlayout" layoutstyle="bottomtotop" size="400,400" splitterposition="0,375,400,375" name="divMain" dock="fill" location="0,0">
+      <input type="usercontrol" cid="indexdiv" name="divIndex" />
+      <div type="tabcontrol" name="tabMain" dock="fill" selectedindex="0">
+        <div name="TabPage" text="报价列表" type="tabpage">
+          <div type="splitlayout" layoutstyle="toptobottom" size="200,200" splitterposition="0,50,200,50" name="SplitLayoutDiv" text="SplitLayoutDiv" dock="Fill">
+            <div name="Div">
+              <label name="Label" text="选择股票" location="11,15" size="60,17" />
+              <input type="text" name="txtCode" location="78,12" size="126,20" />
+              <input type="usercontrol" cid="ribbonbutton" name="btnAdd" text="添加到自选股" location="219,12" size="120,20" />
+              <input type="usercontrol" cid="ribbonbutton" name="btnExport" text="导出结果" location="353,12" size="100,20" />
+              <input type="usercontrol" cid="ribbonbutton" name="btnCreateSelect" text="创建选股" location="469,12" size="100,20" />
+            </div>
+            <div type="splitlayout" layoutstyle="bottomtotop" size="200,200" splitterposition="120,1" name="SplitLayoutDiv22">
+              <div type="layout" name="divFunc" style="lefttoright" showhscrollbar="true" allowpreviewsevent="true" allowdragscroll="true">
+                <input type="usercontrol" cid="indicatorbutton" name="btnUserSecurity" text="我的自选股" location="8,62" size="200,45" />
+                <input type="usercontrol" cid="indicatorbutton" name="btnUpperLimitStock" text="涨停个股" location="8,62" size="200,45" />
+                <input type="usercontrol" cid="indicatorbutton" name="btnDownLimitStock" text="跌停个股" location="222,62" size="200,45" />
+                <input type="usercontrol" cid="indicatorbutton" name="btnSwingStock" text="振幅排名(前50位)" location="8,114" size="200,45" />
+                <input type="usercontrol" cid="indicatorbutton" name="btnVolumesStock" text="成交量排名(前50位)" location="436,115" size="200,45" />
+                <input type="usercontrol" cid="indicatorbutton" name="btnAmountsStock" text="成交额排名(前50位)" location="436,115" size="200,45" />
+                <input type="usercontrol" cid="indicatorbutton" name="btnActiveStock" text="活跃排名(前50位)" location="7,8" size="200,45" />
+                <input type="usercontrol" cid="indicatorbutton" name="btnLowPriceStock" text="低价排名(前50位)" location="223,115" size="200,45" />
+                <input type="usercontrol" cid="indicatorbutton" name="btnSecondNewStock" text="次新股" location="221,8" size="200,45" />
+                <input type="usercontrol" cid="indicatorbutton" name="btnUnTradeStock" text="停牌个股" location="435,62" size="200,45" />
+                <input type="usercontrol" cid="indicatorbutton" name="btnMergeHistoryDatas" text="日线落地" location="9,165" size="200,45" />
+              </div>
+              <table name="gridUserSecurities">
+                <tr>
+                  <th name="colP1" text="股票代码" width="100" allowdrag="true" allowresize="true" />
+                  <th name="colP2" text="股票名称" width="100" allowdrag="true" allowresize="true" />
+                  <th name="colP3" text="最新价" width="80" allowdrag="true" allowresize="true" />
+                  <th name="colP4" text="涨跌额" width="80" allowdrag="true" allowresize="true" />
+                  <th name="colP5" text="涨跌幅" width="80" allowdrag="true" allowresize="true" />
+                  <th name="colP6" text="最高价" width="80" allowdrag="true" allowresize="true" />
+                  <th name="colP7" text="最低价" width="80" allowdrag="true" allowresize="true" />
+                  <th name="colP8" text="开盘价" width="80" allowdrag="true" allowresize="true" />
+                  <th name="colP9" text="成交量" width="100" allowdrag="true" allowresize="true" />
+                  <th name="colP10" text="成交额" width="100" allowdrag="true" allowresize="true" />
+                  <th name="colP11" text="自动卖出位" width="80" allowdrag="true" allowresize="true" />
+                  <th name="colP12" text="自动买入位" width="80" allowdrag="true" allowresize="true" />
+                  <th name="colP13" text="自动止损位" width="80" allowdrag="true" allowresize="true" />
+                  <th name="colP14" text="提示" width="100" allowdrag="true" allowresize="true" />
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div name="TabPage" text="K线图" type="tabpage">
+          <chart name="chartScope" dock="fill">
+            <div VerticalPercent="0.5" />
+            <div VerticalPercent="0.25" />
+            <div VerticalPercent="0.25" />
+          </chart>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
