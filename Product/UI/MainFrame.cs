@@ -819,18 +819,17 @@ namespace FaceCat {
                             if (ch != '\0') {
                                 FCSize size = Native.Host.getSize();
                                 FCPoint location = new FCPoint(size.cx - m_searchDiv.Width, size.cy - m_searchDiv.Height);
-                                if (name == "txtCode") {
-                                    FCPoint fPoint = new FCPoint(0, 0);
-                                    fPoint = focusedControl.pointToNative(fPoint);
-                                    location = new FCPoint(fPoint.x, fPoint.y + focusedControl.Height);
-                                    m_searchDiv.Location = location;
-                                    m_searchDiv.SearchTextBox.Text = "";
-                                    m_searchDiv.filterSearch();
-                                    m_searchDiv.Visible = true;
-                                    m_searchDiv.SearchTextBox.Focused = true;
-                                    m_searchDiv.update();
-                                    m_searchDiv.invalidate();
-                                }
+                                FCPoint fPoint = new FCPoint(0, 0);
+                                FCTextBox txtCode = getTextBox("txtCode");
+                                fPoint = txtCode.pointToNative(fPoint);
+                                location = new FCPoint(fPoint.x, fPoint.y + txtCode.Height);
+                                m_searchDiv.Location = location;
+                                m_searchDiv.SearchTextBox.Text = "";
+                                m_searchDiv.filterSearch();
+                                m_searchDiv.Visible = true;
+                                m_searchDiv.SearchTextBox.Focused = true;
+                                m_searchDiv.update();
+                                m_searchDiv.invalidate();
                             }
                         }
                     }
